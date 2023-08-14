@@ -2,11 +2,15 @@ nav {
   display: flex;
   margin: 0 auto;
   justify-content: center;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  height: 110px;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 160px;
 }
 .logo-nav {
+  margin-top: 1.4rem;
   margin-right: 1.8rem;
+  width: 130px;
+  height: 130px;
 }
 
 .nav-third-section,
@@ -21,6 +25,14 @@ nav {
   margin-left: 1rem;
   cursor: pointer;
 }
+.nav-third-section,
+.nav-first-section {
+  margin-top: 1.4rem;
+}
+
+.nav-second-section {
+  margin-top: 2.8rem;
+}
 
 .icon-search,
 .icon-location {
@@ -32,6 +44,7 @@ nav {
 }
 .p-restautants {
   text-decoration: underline;
+  color: #006bae;
 }
 .ham-icon {
   display: none;
@@ -45,21 +58,43 @@ nav {
 
   nav {
     justify-content: left;
-    align-items: center;
     margin: 0;
     padding: 0;
     height: 60px;
     position: relative;
-  }
-  .logo-nav {
+    align-items: normal;
   }
   .logo-nav {
     width: 50px;
+    height: 50px;
+    margin-top: 0rem;
   }
   .ham-icon {
     display: flex;
     cursor: pointer;
     position: absolute;
     left: 3.8rem;
+    top: 1rem;
   }
+  .close-icon {
+    position: absolute;
+    right: 1rem;
+    top: 0.8rem;
+  }
+  .device-navbar {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin-top: 3.2rem;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    width: 1000px;
+    padding-bottom: 2rem;
+  }
+  .device-navbar li {
+    margin-top: 1.4rem;
+  }
+}
+
+.navbar-active {
+  height: 500px;
 }
