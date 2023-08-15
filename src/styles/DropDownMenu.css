@@ -1,0 +1,37 @@
+.dropdownmenu-icons {
+  border: solid 1px rgb(202, 202, 202);
+  padding: 2.5rem 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  z-index: 1000;
+  top: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  padding: 0;
+  margin: 0;
+}
+
+.grid-item {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+.btn-allproducts {
+  padding: 15px 25px;
+  background-color: white;
+  border: solid 1px rgb(163, 163, 163);
+  font-weight: 400;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
