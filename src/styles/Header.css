@@ -19,7 +19,7 @@ nav {
   display: flex;
 }
 
-.nav-third-section p,
+.nav-third-section span,
 .nav-second-section p,
 .nav-first-section p {
   margin-left: 1rem;
@@ -63,6 +63,7 @@ nav {
     height: 60px;
     position: relative;
     align-items: normal;
+    box-shadow: none;
   }
   .logo-nav {
     width: 50px;
@@ -87,11 +88,51 @@ nav {
     padding: 0;
     margin-top: 3.2rem;
     border-bottom: 1px solid rgb(219, 219, 219);
-    width: 1000px;
+    width: 100%;
     padding-bottom: 2rem;
   }
   .device-navbar li {
     margin-top: 1.4rem;
+  }
+  .device-list-section {
+    width: 100%;
+  }
+  .fix-icon {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mdLocation {
+    margin-right: 1rem;
+  }
+
+  .produkt-accordion {
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+  }
+  .span-produkt-withicons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn-allproducts-device {
+    padding: 14px 50px;
+    color: black;
+    background-color: white;
+    border: solid 1px rgb(187, 187, 187);
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+  }
+  .allprodukte-items {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+  }
+  .allprodukte-items img {
+    width: 60px;
+    height: 60px;
   }
 }
 
