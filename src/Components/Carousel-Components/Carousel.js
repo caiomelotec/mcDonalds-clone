@@ -1,5 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { CarouselItem } from "./CaroulselItem";
+import { CarouselItem } from "./CarouselItem";
+import { ContainerInfo } from "./ContainerInfo";
+import "./Carousel.css";
+
+import ex01 from "./carousel-imgs/ex01.jpg";
+import ex02 from "./carousel-imgs/ex02.jpeg";
+import ex03 from "./carousel-imgs/ex04.jpg";
+import ex04 from "./carousel-imgs/ex03.jpg";
+import ex05 from "./carousel-imgs/ex05jpg.jpg";
 
 export const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -24,7 +32,7 @@ export const Carousel = () => {
     },
   ];
 
-  updateIndex = (newIndex) => {
+  const updateIndex = (newIndex) => {
     if (newIndex < 0) {
       newIndex = 0;
     } else if (newIndex >= items.length) {

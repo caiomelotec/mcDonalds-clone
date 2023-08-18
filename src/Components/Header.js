@@ -15,10 +15,10 @@ import { productListIcons } from "../data/data";
 
 // function theat impor the imgs
 
-export const Header = () => {
+export const Header = ({ toggle, setToggle }) => {
   const [accordion, setAccordion] = useState(true);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [toggle, setToggle] = useState(true);
+
   const [toggleDropDown, setToggleDropDown] = useState(true);
 
   const rotateTo0deg = { transform: "rotate(0deg)" };

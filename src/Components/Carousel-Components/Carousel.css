@@ -1,11 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;500;700;900&family=Roboto:wght@100;300;400;500;700&display=swap");
 * {
   font-family: "Roboto";
-}
-
-body {
-  margin: 0;
-  padding: 0;
 }
 
 /* container info */
@@ -25,6 +19,12 @@ body {
 .subContainer-info {
   background-color: white;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.subContainer-info h1 {
+  font-size: 1.8rem;
 }
 
 #span-info {
@@ -53,6 +53,7 @@ body {
   margin: auto;
   position: relative;
   overflow: hidden;
+  margin-top: 5rem;
 }
 .inner {
   white-space: nowrap;
@@ -84,7 +85,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   overflow: hidden;
-  z-index: 100;
   background-color: white;
   position: absolute;
   bottom: 1rem;
@@ -134,9 +134,12 @@ body {
   }
   .carousel-item {
     height: auto;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
   }
   .containerInfo {
-    bottom: 5.5rem;
+    bottom: 6.7rem;
     width: 100%;
     left: 0;
     margin-right: 4rem;
@@ -158,15 +161,6 @@ body {
   .subContainer-info h1 {
     font-size: 1.6rem;
   }
-}
-/* Example media query for smaller screens */
-@media (max-width: 1100px) {
-  .carousel-item {
-    height: auto;
-    display: inline-flex;
-    align-items: center;
-    text-align: center;
-  }
   #carousel-img {
     max-width: 100%;
     height: auto;
@@ -178,10 +172,15 @@ body {
     align-items: center;
   }
 }
+
 @media (max-width: 844px) {
+  .carousel {
+    margin-top: 3rem;
+  }
+
   .containerInfo {
     height: 360px;
-    bottom: 0.2rem;
+    bottom: 2rem;
   }
   .containerInfo span {
     font-size: 1rem;

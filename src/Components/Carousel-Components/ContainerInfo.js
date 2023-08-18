@@ -58,14 +58,12 @@ export const ContainerInfo = ({
   return (
     <div className="containerInfo">
       <div className="subContainer-info">
-        <div>
-          <h1>{containerInfoData[activeIndex].h1}</h1>
-          <p>{containerInfoData[activeIndex].p}</p>
-          <div className="div-btn-info">
-            <button>{containerInfoData[activeIndex].button}</button>
-          </div>
-          <span id="span-info">{containerInfoData[activeIndex].span}</span>
+        <h1>{containerInfoData[activeIndex].h1}</h1>
+        <p>{containerInfoData[activeIndex].p}</p>
+        <div className="div-btn-info">
+          <button>{containerInfoData[activeIndex].button}</button>
         </div>
+        <span id="span-info">{containerInfoData[activeIndex].span}</span>
       </div>
 
       <div className="carousel-buttons">
