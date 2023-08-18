@@ -112,7 +112,9 @@ export const Header = () => {
               <ul className="device-navbar device-navbar-2">
                 <li className={accordion ? null : ""}>
                   <div className="span-produkt-withicons">
-                    <span>Produkte</span>
+                    <span onClick={() => setAccordion(!accordion)}>
+                      Produkte
+                    </span>
                     {/*toggle the Button from - to + and so on */}
                     {accordion ? (
                       <AiOutlinePlus

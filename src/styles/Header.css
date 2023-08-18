@@ -112,6 +112,7 @@ nav {
   }
   .device-navbar li {
     margin-top: 1.4rem;
+    cursor: pointer;
   }
   .device-list-section {
     width: 100%;
@@ -137,6 +138,7 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
   }
 
   .btn-allproducts-device {
@@ -147,6 +149,7 @@ nav {
     font-weight: 400;
     font-size: 0.8rem;
     margin-top: 1rem;
+    cursor: pointer;
   }
   .allprodukte-items {
     display: flex;
