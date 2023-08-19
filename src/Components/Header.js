@@ -12,6 +12,7 @@ import { FaBars } from "react-icons/fa";
 import DropDownMenu from "../Components/DropDownMenu";
 
 import { productListIcons } from "../data/data";
+import { Link } from "react-router-dom";
 
 // function theat impor the imgs
 
@@ -30,13 +31,21 @@ export const Header = ({ toggle, setToggle }) => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
+
     // Add an event listener to the 'resize' event and attach the handleResize function
     window.addEventListener("resize", handleResize);
     // Cleanup function: Remove the 'resize' event listener when the component unmounts or the effect changes
+
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []); // Empty dependencies array means this effect runs only once after initial render
+
+  useEffect(() => {
+    if (windowWidth > 950) {
+      setToggle(true);
+    }
+  }, [windowWidth, setToggle]);
 
   return (
     <>
@@ -45,7 +54,9 @@ export const Header = ({ toggle, setToggle }) => {
           className="container"
           style={{ display: "flex", justifyContent: "center" }}
         >
-          <img src={Logo} alt="" className="logo-nav" />
+          <Link to="/">
+            <img src={Logo} alt="" className="logo-nav" />
+          </Link>
           <div>
             <section className="nav-first-section">
               <p>Karriere</p>
