@@ -33,14 +33,15 @@ export const Carousel = () => {
   ];
 
   const updateIndex = (newIndex) => {
+    const lastIndex = items.length - 1;
     // Ensure the newIndex is within valid range
     if (newIndex < 0) {
       newIndex = 0;
-    } else if (newIndex >= items.length) {
-      newIndex = items.length - 1;
+    } else if (newIndex > lastIndex) {
+      newIndex = lastIndex;
     }
     // Handle special case when count is 5 and newIndex is 4, it skip to index 0
-    if (count === 5 && newIndex === 4) {
+    if (count === 5 && newIndex === lastIndex) {
       newIndex = 0;
       setCount(1);
     }
@@ -51,19 +52,21 @@ export const Carousel = () => {
      * - When newIndex is 1, 2, or 3, set the count accordingly.
      * - When newIndex is 4, set the count to 5 for special behavior.
      */
+    const isFirstStep = count === 1;
+
     if (newIndex >= 1 && newIndex <= 3) {
       setCount(newIndex);
-    } else if (newIndex === 4) {
+    } else if (newIndex === lastIndex) {
       setCount(5);
     }
 
     // Handle wraparound from newIndex 0 to 4 with count at 1
-    if (newIndex === 0 && count === 1) {
+    if (newIndex === 0 && isFirstStep) {
       newIndex = 4;
       setCount(5);
     }
     // If the slider is playing and newIndex is 4, reset index after delay
-    if (isPlaying && newIndex === 4) {
+    if (isPlaying && newIndex === lastIndex) {
       setTimeout(() => {
         setActiveIndex(0);
       }, 1800);
