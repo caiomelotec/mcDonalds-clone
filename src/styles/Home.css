@@ -1,0 +1,68 @@
+.h1-neues {
+  margin: 4rem 0;
+  text-align: center;
+
+  color: #292929;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  width: 70%; /* Set a specific width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  gap: 2rem;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.teaser-content {
+  height: 610px;
+  width: 390px;
+  border: solid 1px rgb(187, 186, 186);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  vertical-align: middle;
+  align-items: center;
+}
+.teaser-content img {
+  width: 100%;
+  margin-bottom: 1.1rem;
+}
+.sub-teaser-content {
+  margin: 0 1.9rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.8rem;
+  vertical-align: middle;
+}
+.teaser-p {
+  font-weight: 400;
+  font-size: 14px;
+}
+.teaser-btn-div {
+  margin-top: 2.8rem;
+}
+
+.teaser-btn-div button {
+  background-color: #ffbc0d;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.teaser-span {
+  font-size: 12px;
+}
+
+@media (max-width: 1600px) {
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .teaser-content {
+    max-width: 100%; /* Adjust max-width for smaller screens */
+  }
+}
