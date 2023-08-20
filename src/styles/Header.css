@@ -1,5 +1,5 @@
 nav {
-  margin: 0 auto;
+  display: flex;
   justify-content: center;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -10,7 +10,6 @@ nav {
 
 .logo-nav {
   margin-top: 1.4rem;
-  margin-right: 5rem;
   width: 130px;
   height: 130px;
 }
@@ -27,12 +26,15 @@ nav {
   margin-left: 1rem;
   cursor: pointer;
 }
-.nav-third-section,
-.nav-first-section {
+.nav-third-section {
   margin-top: 1.4rem;
+}
+.nav-first-section {
+  margin-top: 3rem;
 }
 
 .nav-second-section {
+  width: 600px;
   margin-top: 2.8rem;
 }
 .nav-second-section div {
@@ -87,6 +89,7 @@ nav {
     height: 50px;
     margin-top: 0rem;
     position: absolute;
+    top: 0;
     left: 0;
   }
   .ham-icon {
