@@ -44,7 +44,9 @@ export const Home = ({ toggle }) => {
                 <div className="img-div">
                   <img src={teaser02} alt="" />
                 </div>
-                <h1 className="teaser-h1">Da kommt Freude an</h1>
+                <h1 className="teaser-h1">
+                  Da kommt Freude <br /> an
+                </h1>
                 <div className="sub-teaser-content sub-teaser-2">
                   <p className="teaser-p">
                     Familienabend? Romantisches Date? Oder einfach nur gönnen?

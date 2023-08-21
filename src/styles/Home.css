@@ -20,10 +20,11 @@
 }
 .teaser-h1 {
   margin: 0 1.9rem;
+  height: 120px;
 }
 
 .teaser-content {
-  height: 610px;
+  height: 600px;
   width: 390px;
   border: solid 1px rgb(187, 186, 186);
   display: flex;
@@ -38,13 +39,11 @@
   margin: 0 1.9rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 0.8rem;
-  vertical-align: middle;
 }
 .teaser-p {
   font-weight: 400;
   font-size: 14px;
+  height: 120px;
 }
 
 .teaser-btn-div button {
@@ -56,9 +55,14 @@
 }
 .teaser-span {
   font-size: 12px;
-  margin: 2rem 1.9rem;
+  margin: 1.9rem;
+  height: 120px;
 }
-.btn-1 {
+
+.teaser-btn-div {
+  padding-top: 1rem;
+}
+/* .btn-1 {
   margin-bottom: 1rem;
 }
 .btn-3 {
@@ -66,7 +70,7 @@
 }
 .btn-2 {
   margin: 2em 0;
-}
+} */
 
 @media (max-width: 1600px) {
   .container {
@@ -78,7 +82,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 940px) {
   .container {
     width: 100%;
     grid-template-columns: repeat(1, 1fr);
@@ -89,6 +93,36 @@
   .teaser-content {
     width: 100%; /* Adjust max-width for smaller screens */
     margin-bottom: 1rem;
+    height: 600px;
+  }
+  .sub-teaser-conten {
+    padding: 0;
+    margin: 0;
+    height: auto;
+  }
+  .teaser-h1 {
+    height: auto;
+  }
+  .teaser-span {
+    height: auto;
+    padding-bottom: 1rem;
+  }
+  .teaser-btn-div {
+    height: auto;
+    padding: 0;
+    padding-top: 1.3rem;
+  }
+  .teaser-p {
+    height: auto;
+  }
+  .teaser-btn-div button {
+    margin: 0;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .teaser-content {
     height: 500px;
   }
 }
