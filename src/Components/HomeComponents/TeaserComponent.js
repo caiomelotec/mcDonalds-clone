@@ -2,6 +2,7 @@ import React from "react";
 import teaser01 from "../../assets/teaser01.jpg";
 import teaser02 from "../../assets/teaser02.jpg";
 import teaser03 from "../../assets/teaser03.jpg";
+import "../../styles/Teaser1.css";
 
 export const TeaserComponent = () => {
   return (

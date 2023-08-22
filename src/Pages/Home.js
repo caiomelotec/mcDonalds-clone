@@ -1,9 +1,9 @@
 import React from "react";
-import "../styles/Home.css";
 
 import { Carousel } from "../Components/Carousel-Components/Carousel";
 
 import { TeaserComponent } from "../Components/HomeComponents/TeaserComponent";
+import { TeaserComponentTwo } from "../Components/HomeComponents/TeaserComponentTwo";
 
 export const Home = ({ toggle }) => {
   return (
@@ -12,6 +12,7 @@ export const Home = ({ toggle }) => {
         <div>
           <Carousel />
           <TeaserComponent />
+          <TeaserComponentTwo />
         </div>
       ) : null}
     </>
