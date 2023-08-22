@@ -5,7 +5,7 @@
   color: #292929;
 }
 
-.test {
+.container-wrapper {
   display: flex;
   justify-content: center;
 }
