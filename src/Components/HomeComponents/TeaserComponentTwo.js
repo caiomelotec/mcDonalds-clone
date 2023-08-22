@@ -41,8 +41,8 @@ export const TeaserComponentTwo = () => {
       </div>
       <div className="container-wrapper-02">
         <div className="container-02">
-          {infos.map((info) => (
-            <div className="teaser-content-02">
+          {infos.map((info, index) => (
+            <div className="teaser-content-02" key={index}>
               <div className="img-div-02">
                 <img src={info.img} alt="" />
               </div>
