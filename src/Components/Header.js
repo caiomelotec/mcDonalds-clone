@@ -13,33 +13,21 @@ import DropDownMenu from "../Components/DropDownMenu";
 
 import { productListIcons } from "../data/data";
 import { Link } from "react-router-dom";
+import { useResize } from "../Context/ContextResize";
 
 // function theat impor the imgs
 
 export const Header = ({ toggle, setToggle }) => {
+  // context
+  const { windowWidth } = useResize();
+
   const [accordion, setAccordion] = useState(true);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const [toggleDropDown, setToggleDropDown] = useState(true);
 
   const rotateTo0deg = { transform: "rotate(0deg)" };
   const rotateTo180deg = { transform: "rotate(180deg)" };
   const fontWeight = { fontWeight: "600" };
-
-  useEffect(() => {
-    // Define a function that updates the windowWidth state with the current inner width
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    // Add an event listener to the 'resize' event and attach the handleResize function
-    window.addEventListener("resize", handleResize);
-    // Cleanup function: Remove the 'resize' event listener when the component unmounts or the effect changes
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []); // Empty dependencies array means this effect runs only once after initial render
 
   useEffect(() => {
     if (windowWidth > 950) {
