@@ -1,8 +1,9 @@
 .h1-neues {
   margin: 4rem 0;
   text-align: center;
-
+  font-size: 2rem;
   color: #292929;
+  font-weight: 600;
 }
 
 .container-wrapper {
@@ -124,5 +125,8 @@
 @media (max-width: 500px) {
   .teaser-content {
     height: 500px;
+  }
+  .h1-neues {
+    font-size: 1.7rem;
   }
 }

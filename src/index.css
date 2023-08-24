@@ -8,3 +8,10 @@
   text-decoration: none;
   list-style: none;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  position: relative;
+}

@@ -194,3 +194,20 @@
     bottom: 0;
   }
 }
+
+@media (max-width: 400px) {
+  .carousel {
+    margin-top: 0;
+  }
+
+  .carousel-item {
+    height: 300px;
+  }
+  .containerInfo {
+    height: 450px;
+    bottom: 0rem;
+  }
+  .containerInfo span {
+    font-size: 1rem;
+  }
+}
