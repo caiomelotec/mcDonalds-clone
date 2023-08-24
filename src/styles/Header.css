@@ -123,6 +123,7 @@ nav {
     left: 0;
     top: 100%;
     background-color: white;
+    overflow: hidden;
   }
   .fix-icon {
     display: flex;

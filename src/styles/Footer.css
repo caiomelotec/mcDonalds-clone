@@ -73,3 +73,27 @@
   width: 28px;
   height: 28px;
 }
+
+@media only screen and (max-width: 1025px) {
+  .icons-div {
+    justify-content: center;
+    margin: 1.2rem 0;
+  }
+  .div-imgs {
+    justify-content: center;
+    padding: 1.4rem;
+    border-bottom: solid 1px rgb(176, 176, 176);
+  }
+  .div-lists ul li {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+  .copyright-div {
+    justify-content: center;
+    margin: 1.2rem 0;
+    font-size: 0.8rem;
+    align-items: center;
+  }
+}
