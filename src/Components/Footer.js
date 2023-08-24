@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/Footer.css";
 import { FaFacebookF } from "react-icons/fa";
 import {
@@ -12,7 +12,18 @@ import apple from "../assets/apple.jpg";
 import smalllogo from "../assets/smalllogo.jpg";
 
 export const Footer = () => {
-  return (
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return windowWidth < 1025 ? null : (
     <footer className="footer-wrapper">
       <div className="footer-pt1">
         <ul>
