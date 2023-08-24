@@ -10,14 +10,16 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="App">
+      <>
         <Header toggle={toggle} setToggle={setToggle} />
-        <Routes>
-          <Route path="/" element={<Home toggle={toggle} />} />
-        </Routes>
-        <Modal />
-        <Footer />
-      </div>
+        <div className="App">
+          <Routes>
+            <Route path="/" element={<Home toggle={toggle} />} />
+          </Routes>
+          <Footer toggle={toggle} />
+          <Modal />
+        </div>
+      </>
     </BrowserRouter>
   );
 }
