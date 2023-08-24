@@ -11,7 +11,8 @@ export const ContainerInfo = ({
 }) => {
   const containerInfoData = [
     {
-      h1: "Sammelspaß mit Pokémon",
+      h1: "Sammelspaß mit ",
+      h1pt2: "Pokémon",
       p: "Jetzt 4 von 15 Sammelkarten in jedem Happy Meal®!",
       button: "Zum Spielzeug",
       span: `In Frühstücksrestaurants ab 10 Uhr (samstags, sonn- und feiertags ab
@@ -25,20 +26,23 @@ export const ContainerInfo = ({
       span: `* In Frühstücksrestaurants ab 10 Uhr (samstags, sonn- und feiertags ab 11 Uhr).`,
     },
     {
-      h1: "Täglich Coupon remixen! ",
+      h1: "Täglich Coupon",
+      h1pt2: "remixen!",
       p: "Mach die McDonald’s App zu deiner Bühne: Einfach Klassiker wählen, Beilage wählen und deinen eigenen Coupon für nur 5 € erstellen!",
       button: "Mehr erfahren",
       span: `
       *Nur für registrierte App-User in teilnehmenden Restaurants. Vom 27.07.23 bis 30.08.23 täglich ein Coupon aus ausgewählten Produkten erstellbar. Nur ein Coupon pro Bestellung.`,
     },
     {
-      h1: "Schmeckt nach Sommer-Flirt! ",
+      h1: "Schmeckt nach",
+      h1pt2: "Sommer-Flirt!",
       p: "Gönn dir eiskalt! Und zwar den neuen McFlurry® Frozen Yogurt mit KITKAT® WHITE und Passionfruit-Sauce. Jetzt nur für kurze Zeit.",
       button: "Zu den Desserts",
       span: `In teilnehmenden Restaurants. In Frühstücksrestaurants ab 10 Uhr (samstags, sonn- und feiertags ab 11 Uhr). Solange der Vorrat reicht.`,
     },
     {
-      h1: "Deine McCafé® Genuss-Oase",
+      h1: `Deine McCafé®`,
+      h1pt2: "Genuss-Oase",
       p: "Entdecke unsere McCafé® Sommerhighlights wie z. B. unsere Cold Brews und Sweets.. Jetzt nur für kurze Zeit.",
       button: "Zu den McCafé® Highlights",
       span: `In allen teilnehmenden Restaurants. Solange der Vorrat reicht. Iced Coffee Shake täglich ab 10 Uhr erhältlich (samstags, sonn- und feiertags ab 11 Uhr).`,
@@ -58,7 +62,10 @@ export const ContainerInfo = ({
   return (
     <div className="containerInfo">
       <div className="subContainer-info">
-        <h1>{containerInfoData[activeIndex].h1}</h1>
+        <div>
+          <h1>{containerInfoData[activeIndex].h1}</h1>
+          <h1>{containerInfoData[activeIndex].h1pt2}</h1>
+        </div>
         <p>{containerInfoData[activeIndex].p}</p>
         <div className="div-btn-info">
           <button>{containerInfoData[activeIndex].button}</button>
