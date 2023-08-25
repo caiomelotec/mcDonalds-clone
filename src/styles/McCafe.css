@@ -1,0 +1,46 @@
+.mccafe-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.mccafe-pt1 {
+  width: 70%;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  color: #292929;
+  font-weight: 800;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+.mccafe-img {
+  width: auto;
+  height: auto;
+}
+
+.cold-drinks-info {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 7rem;
+  margin: 5rem 0;
+}
+.cold-drinks-info h1 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #292929;
+}
+.cold-drinks-info p {
+  font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .mccafe-pt1 {
+    width: 95%;
+  }
+  .title {
+    font-size: 2rem;
+  }
+}
