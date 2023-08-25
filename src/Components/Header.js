@@ -12,12 +12,15 @@ import { FaBars } from "react-icons/fa";
 import DropDownMenu from "../Components/DropDownMenu";
 
 import { productListIcons } from "../data/data";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useResize } from "../Context/ContextResize";
 
 // function theat impor the imgs
 
 export const Header = ({ toggle, setToggle }) => {
+  // This hook returns the current location object. This can be useful to perform some action whenever the current location changes.
+  const location = useLocation();
+
   // context
   const { windowWidth } = useResize();
 
@@ -64,8 +67,22 @@ export const Header = ({ toggle, setToggle }) => {
                 />
               </div>
 
-              <p>McCafé</p>
-              <p>Familien</p>
+              <Link
+                id="item"
+                className={location.pathname === "/mccafe" ? "activLink" : null}
+                to="/mccafe"
+              >
+                McCafé
+              </Link>
+              <Link
+                to="/familien"
+                id="item"
+                className={
+                  location.pathname === "/familien" ? "activLink" : null
+                }
+              >
+                Familien
+              </Link>
               <p>Usere Verantwortung</p>
               <p>MyMcDonald's</p>
             </section>
