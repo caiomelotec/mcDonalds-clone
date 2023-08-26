@@ -17,7 +17,7 @@ function App() {
         <div className="App">
           <Routes>
             <Route path="/" element={<Home toggle={toggle} />} />
-            <Route path="/mccafe" element={<McCafe />} />
+            <Route path="/mccafe" element={<McCafe toggle={toggle} />} />
             <Route path="/familien" element={<Familien />} />
           </Routes>
           <Footer toggle={toggle} />
