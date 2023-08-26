@@ -22,5 +22,8 @@ export const productListIcons = [
   { label: "Frühstück", imageSrc: importImage("breakfast.jpg") },
   { label: "Getränke", imageSrc: importImage("drink.jpg") },
   { label: "Desserts", imageSrc: importImage("desserts.jpg") },
-  { label: "McCafé®", imageSrc: importImage("mccafe.jpg") },
+  {
+    label: "McCafé®",
+    imageSrc: importImage("mccafe.jpg"),
+  },
 ];

@@ -135,6 +135,7 @@ nav {
   }
   .device-list-section {
     width: 100%;
+    min-height: 50rem;
     position: absolute;
     left: 0;
     top: 100%;
